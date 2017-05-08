@@ -1,49 +1,1117 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>Formação GIT - Uma Dádiva dos ninjas!</title>
+	<meta name="description" content="Formação GIT - Uma Dádiva dos ninjas!">
+	<meta name="author" content="Josenaldo de Oliveira Matos Filho">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<script src="//localhost:35729/livereload.js"></script>
+
+	<!--[if lt IE 9]> <script src="lib/js/html5shiv.js"></script> <![endif]-->
+	<link rel="stylesheet" href="css/presentation.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h1>Formação GIT</h1>
+				<h3>Uma Dádiva dos ninjas</h3>
+				<img src="images/lionman.jpg" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Quem sou?</h2>
+				<h4>Josenaldo de Oliveira Matos Filho</h4>
+				<h4>Jugleader no <a href="http://uaijug.com.br" target="_blank">UaiJUG</a></h4>
+				<h4>Programador aposentado</h4>
+				<h4>NÃO SOU MILIONÁRIO EXCÊNTRICO</h4>
+				<h5>APENAS EXCÊNTRICO</h5>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Contatos</h2>
+				<h4>Email: josenaldo@gmail.com</h4>
+				<h4>Twitter: @josenaldomatos</h4>
+				<h4>Github: https://github.com/josenaldo</h4>
+				<h4>Steam: josenaldo</h4>
+				<h4>PSN: vudu_reverso</h4>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Quem somos?</h2>
+				<img src="images/uaijug-300.png" class="plain">
+				<h3>Grupo de usuários Java do Triângulo Mineiro</h3>
+			</section>
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 1</h1>
+				<h2 class="subtitle">Introdução ao Controle de Versão</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>O dia em que rasguei o CD!</h2>
+				<img src="images/cd_rasgado.jpg" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Como estudantes fazem versionamento?</h2>
+				<img src="images/versaofinal.jpg" class="plain">
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Como estudantes compartilham documentos</h2>
+				<img src="images/versaoemail.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Avaliação rápida</h2>
+				<ul>
+					<li>Já perdeu código por causa de alterações?</li>
+					<li>Tem dificuldade em saber quem alterou o que e quando?</li>
+					<li>Tem dificuldade em recuperar uma versão do documento?</li>
+					<li>Tem problemas em manter variações do sistema ao mesmo tempo?</li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Se respondeu sim pra qualquer uma das perguntas anteriores, você precisa <i>urgentemente</i> de um sistema de controle de versão</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Controle de versão</h2>
+				<h4>Um sistema de controle de versão é um software com a finalidade de gerenciar diferentes versões no desenvolvimento de um documento qualquer...</h4>
+				<blockquote cite="http://wikipedia.com.br">
+					Boring definition...
+				</blockquote>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Controle de versão - Vantagens</h2>
+				<h4>Controle de histórico</h4>
+				<h4>Trabalho em equipe</h4>
+				<h4>Marcação e resgate de versões estáveis</h4>
+				<h4>Variações do projeto</h4>
+				<h4>Backup do projeto </h4>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Controle de versão local</h2>
+				<img src="images/sistema-local.png" class="plain" />
+				<aside class="notes">
+					<p>Repositório fica armazenado num servidor central</p>
+					<p>Desenvolvedores fazem checkout e obtém uma cópia da última revisão do projeto</p>
+					<p>Desenvolvedor faz commit para enviar alterações para o projeto</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Controle de versão centralizado</h2>
+				<img src="images/sistema-centralizado.png" class="plain" />
+
+				<aside class="notes">
+					<p>Pouca autonomia</p>
+					<p>Trabalho privado limitado</p>
+					<p>Risco de perda de dados</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Controle de versão distribuído</h2>
+				<img src="images/sistema-distribuido.png" class="plain" />
+				<aside class="notes">
+					<p>Autonomia</p>
+					<p>Rapidez</p>
+					<p>Trabalho privado</p>
+					<p>Confiabilidade</p>
+					<p>Cada computador tem uma cópia completa do repositório do projeto</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Exemplos Open Source</h2>
+				<ul>
+					<li>
+						Controle de versão centralizado
+						<ul>
+							<li>CVS</li>
+							<li>SVN</li>
+						</ul>
+					</li>
+					<li>
+						Controle de versão distribuído
+						<ul>
+							<li>Git</li>
+							<li>Mercurial</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Senta que lá vem história...</h2>
+				<p>Durante a maior parte do período de manutenção do kernel do Linux (1991-2002), as mudanças no software eram repassadas como patches e arquivos compactados.</p>
+				<blockquote cite="https://pt.slideshare.net/josenaldomatos/programao-orientada-a-gambiarra-30097904">
+					A equipe do Linux usava um Gambi Design Pattern, Zippomatic Versioning
+				</blockquote>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Tá pensando que o Torvalds é bagunça?</h2>
+				<p>Em 2002, o projeto do kernel do Linux começou a usar um sistema DVCS proprietário chamado BitKeeper.</p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Torvalds fica full pistola!</h2>
+				<p>Em 2005, o relacionamento entre a comunidade que desenvolvia o kernel e a empresa que desenvolvia o BitKeeper se desfez. Isso levou a comunidade de desenvolvedores do Linux (em particular Linus Torvalds) a desenvolver sua própria ferramenta.</p>
+
+				<aside class="notes">
+					<p>
+						Notícia da época sobre a criação do git:
+						<a href="http://www.hardware.com.br/noticias/2005-06/42A3D0B0.html" target="_blank">
+							http://www.hardware.com.br/noticias/2005-06/42A3D0B0.html
+						</a>
+					</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Uai sô sérios?</h2>
+				<p>Principais objetivos do novo sistema:</p>
+				<ul>
+					<li>Velocidade</li>
+					<li>Design simples</li>
+					<li>Totalmente distribuído</li>
+					<li>Feito pra aguentar o tranco!</li>
+				</ul>
+
+				<aside class="notes">
+					<p>Por aguentar o tranco queremos dizer:</p>
+					<ul>
+						<li>Suporte robusto a desenvolvimento não linear (milhares de branches paralelos)</li>
+						<li>Capaz de lidar eficientemente com grandes projetos como o kernel do Linux (velocidade e volume de dados)</li>
+					</ul>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Assim nasceu o Git!</h2>
+				<img src="images/gitlogo.png" class="plain" />
+			</section>
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 2</h1>
+				<h2 class="subtitle">Git - Workflow básico</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Instalação</h2>
+				<h3>
+        	<a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-Instalando-Git">https://git-scm.com/book/pt-br/v1/Primeiros-passos-Instalando-Git</a>
+        </h3>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Configuração inicial *nix</h2>
+				<img src="images/config.jpg" class="plain" />
+
+				<aside class="notes">
+					Agora que você tem o Git em seu sistema, você pode querer fazer algumas coisas para customizar seu ambiente Git. Você só precisa fazer uma vez; as configurações serão mantidas entre atualizações. Você também poderá alterá-las a qualquer momento executando
+					os comandos novamente. Git vem com uma ferramenta chamada git config que permite a você ler e definir variáveis de configuração que controlam todos os aspectos de como o Git parece e opera. Essas variáveis podem ser armazenadas em três lugares diferentes:
+					arquivo /etc/gitconfig: Contém valores para todos usuários do sistema e todos os seus repositórios. Se você passar a opção --system para git config, ele lerá e escreverá a partir deste arquivo especificamente. arquivo ~/.gitconfig: É específico para
+					seu usuário. Você pode fazer o Git ler e escrever a partir deste arquivo especificamente passando a opção --global. arquivo de configuração no diretório git (ou seja, .git/config) de qualquer repositório que você está utilizando no momento: Específico
+					para aquele único repositório. Cada nível sobrepõem o valor do nível anterior, sendo assim valores em .git/config sobrepõem aqueles em /etc/gitconfig. Em sistemas Windows, Git procura pelo arquivo .gitconfig no diretório $HOME (C:\Documents and Settins\$USER
+					para a maioria das pessoas). Também procura por /etc/gitconfig, apesar de que é relativo à raiz de MSys, que é o local onde você escolheu instalar o Git no seu sistema Windows quando executou o instalador.
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Configuração inicial Windows</h2>
+				<img src="images/config_windows.jpg" class="plain" />
+
+				<aside class="notes">
+					Agora que você tem o Git em seu sistema, você pode querer fazer algumas coisas para customizar seu ambiente Git. Você só precisa fazer uma vez; as configurações serão mantidas entre atualizações. Você também poderá alterá-las a qualquer momento executando
+					os comandos novamente. Git vem com uma ferramenta chamada git config que permite a você ler e definir variáveis de configuração que controlam todos os aspectos de como o Git parece e opera. Essas variáveis podem ser armazenadas em três lugares diferentes:
+					arquivo /etc/gitconfig: Contém valores para todos usuários do sistema e todos os seus repositórios. Se você passar a opção --system para git config, ele lerá e escreverá a partir deste arquivo especificamente. arquivo ~/.gitconfig: É específico para
+					seu usuário. Você pode fazer o Git ler e escrever a partir deste arquivo especificamente passando a opção --global. arquivo de configuração no diretório git (ou seja, .git/config) de qualquer repositório que você está utilizando no momento: Específico
+					para aquele único repositório. Cada nível sobrepõem o valor do nível anterior, sendo assim valores em .git/config sobrepõem aqueles em /etc/gitconfig. Em sistemas Windows, Git procura pelo arquivo .gitconfig no diretório $HOME (C:\Documents and Settins\$USER
+					para a maioria das pessoas). Também procura por /etc/gitconfig, apesar de que é relativo à raiz de MSys, que é o local onde você escolheu instalar o Git no seu sistema Windows quando executou o instalador.
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Identidade</h2>
+				<pre><code data-trim data-noescape>
+					$ git config --global user.name "John Doe"
+					$ git config --global user.email johndoe@example.com
+        </code></pre>
+
+				<aside class="notes">
+					Relembrando, você só precisará fazer isso uma vez caso passe a opção --global, pois o Git sempre usará essa informação para qualquer coisa que você faça nesse sistema. Caso você queira sobrepor estas com um nome ou endereço de e-mail diferentes para projetos
+					específicos, você pode executar o comando sem a opção --global quando estiver no próprio projeto.
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Operações locais</h2>
+				<h4>O seu repositório é uma CÓPIA</h4>
+				<img src="images/sistema-distribuido.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Operações locais</h2>
+				<h4>A maior parte das operações ocorre localmente</h4>
+				<img src="images/sistema-local.png" class="plain" />
+				<h6>Ex: commit, add, revert...</h6>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Os 3 estados</h2>
+				<img src="images/3estados.png" class="plain" />
+
+				<aside class="notes">
+					<p>
+						O workflow básico do Git pode ser descrito assim:
+					</p>
+					<ul>
+						<li>1. Você modifica arquivos no seu diretório de trabalho.</li>
+						<li>2. Você seleciona os arquivos, adicionando snapshots deles para sua área de preparação.</li>
+						<li>3. Você faz um commit, que leva os arquivos como eles estão na sua área de preparação e os armazena permanentemente no seu diretório Git.</li>
+					</ul>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Inicializando um repositório</h2>
+				<pre><code data-trim data-noescape>
+					$ git init
+        </code></pre>
+				<aside class="notes">
+					<p>
+						Isso cria um novo subdiretório chamado .git que contem todos os arquivos necessários de seu repositório — um esqueleto de repositório Git. Neste ponto, nada em seu projeto é monitorado.
+					</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando o status de seus arquivos</h2>
+				<pre><code data-trim data-noescape>
+					$ git status
+					On branch master
+
+					Initial commit
+
+					nothing to commit (create/copy files and
+						use &quot;git add&quot; to track)
+        </code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Adicionando novos arquivos</h2>
+				<pre><code data-trim data-noescape>
+					$ git add README.md
+
+					$ git status
+					On branch master
+
+					Initial commit
+
+					Changes to be committed:
+					  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+					        new file:   README.md
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Alterando arquivos adicionados</h2>
+				<ul>
+					<li>Criar e adicionar arquivo index.html</li>
+					<li>Alterar arquivo index.html</li>
+					<li>Alterar o arquivo README.md</li>
+				</ul>
+				<pre><code>$ git add *</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Atenção!!!</h2>
+				<h4>
+            Quando o <code>git add</code> é executado, o git seleciona o arquivo do jeito que ele está.
+        </h4>
+				<h4>Se esse arquivo for alterado após o <code>git add</code>, é necessário executar o <code>git add</code> novamente.</h4>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Comitando</h2>
+				<pre><code data-trim data-noescape>
+					$ git commit -m "Comita com mensagem"
+				</code></pre>
+
+				<pre><code data-trim data-noescape>
+					git commit -a -m 'Adiciona e comita com mensagem'
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<!--TODO: melhorar essa imagem -->
+			<section>
+				<h2>Ciclo de vida do arquivo</h2>
+				<img src="images/lifecicle.png" class="plain" />
+			</section>
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 3</h1>
+				<h2 class="subtitle">Git - Workflow remoto</h2>
+			</section>
+
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Inicializando um repositório de armazenamento</h2>
+				<pre><code data-trim data-noescape>
+					$ git init --bare
+        </code></pre>
+
+				<img src="images/bare.png" class="plain" />
+
+				<aside class="notes">
+					<p>
+						Com o comando git init --bare você está criando um repositório que é pushable. Geralmente os repositórios bare são criados no servidor e são considerados repositórios para armazenamento, em contraste aos repositórios que vão nas máquinas dos desenvolvedores
+						que seriam os repositórios de desenvolvimento, criados com o comando git init (sem o --bare).
+					</p>
+					<p>
+						Apesar do GIT ser um sistema de controle de versionamento distribuído, é muito comum que exista um repositório central que facilite a troca de informações entre os desenvolvedores, evitando a necessidade que os computadores dos desenvolvedores se comuniquem
+						diretamente entre si.
+					</p>
+					<p>
+						Ao incializar um repositório como bare não será permitido editar arquivos (git add) e commitar mudanças (git commit), já que o mesmo não possui uma working tree. Você deve atualizar um repositório bare utilizando git push.
+					</p>
+					<p>
+						Você inicializa um repositório como bare quando deseja que ele seja o respositório central.
+					</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Clonando um repositório existente</h2>
+				<pre><code data-trim data-noescape>
+					$ git clone https://github.com/josenaldo/workshop-git.git
+        </code></pre>
+
+				<pre><code data-trim data-noescape>
+					$ git clone git@github.com:josenaldo/workshop-git.git
+        </code></pre>
+
+			</section>
+
+			<!-- ***************************************************************** -->
+			<!-- TODO: colocar imagem de atenção -->
+			<section>
+				<h2>Atenção: Recado pra quem conhece SVN!</h2>
+				<h1>Clone != Checkout</h1>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Obtendo atualizações do repositório remoto</h2>
+				<pre><code data-trim data-noescape>
+				  $ git fetch origin
+				</code></pre>
+
+				<p>
+					Baixa atualizações e novos ramos do projeto do servidor remoto
+				</p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Atualizando o repositório local</h2>
+				<pre><code data-trim data-noescape>
+				  $ git pull origin
+				</code></pre>
+
+				<p>
+					Faz um fetch e tenta fazer um merge das atualizações do ramo atual com a cópia de trabalho
+				</p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Atualizando o repositório remoto</h2>
+				<pre><code data-trim data-noescape>
+				  $ git push origin
+				</code></pre>
+			</section>
+
+			<!-- TODO Adicionar imagem do fluxo remoto -->
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 4</h1>
+				<h2 class="subtitle">Conhecendo o Github</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Github é como as pessoas desenvolvem software!</h2>
+				<p>GitHub é uma comunidade onde 21 milhões de pessoas aprendem, compartilham e trabalham juntas para construir software!</p>
+				<a href="https://github.com">https://github.com</a>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Alguns dados</h2>
+				<ul>
+					<li>Mais de 21 milhões de usuários</li>
+					<li>Mais de 58 milhões de projetos</li>
+					<li>Mais e mais empresas adotam o Github com elemento no processo seletivo</li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Quem usa o Github</h2>
+				<ul>
+					<li>Governos: EUA, Rússia, Japão, Brasil</li>
+					<li>Empresas: de micro a gigantes!</li>
+					<li>Universidades</li>
+					<li>Comunidades</li>
+					<li>Desenvolvedores</li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Só empresa hipster usa o Github?</h2>
+				<ul>
+					<li><a href="https://opensource.microsoft.com/">Microsoft</a></li>
+					<li><a href="http://twitter.github.io/">Twitter</a></li>
+					<li><a href="http://netflix.github.io/">Netflix</a></li>
+					<li><a href="http://ibm.github.io/">IBM</a></li>
+					<li><a href="http://sap.github.io">SAP</a></li>
+					<li><a href="http://adobe.github.io/">Adobe</a></li>
+					<li><a href="http://guardian.github.io/developers/">Guardian</a></li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Criando uma conta</h2>
+				<img src="images/github0.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Criando um novo repositório</h2>
+				<img src="images/github2.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Criando um novo repositório</h2>
+				<img src="images/github3.png" class="plain" />
+			</section>
+
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Home do projeto: Aba code</h2>
+				<img src="images/github4-code.png" class="plain" />
+
+				<aside class="notes">
+					<p>Aqui você pode verificar seus arquivos e navegar na árvore de diretórios.</p>
+					<p>Pode também navegar nas branches e verificar commits passados.</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Home do projeto: Aba issues</h2>
+				<img src="images/github4-issues.png" class="plain" />
+
+				<aside class="notes">
+					<p>Aqui você pode navegar nas tarefas do projeto, criar, atribuir, classificar e resolver tarefas</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Home do projeto: Aba wiki</h2>
+				<img src="images/github4-wiki.png" class="plain" />
+
+				<aside class="notes">
+					<p>Aqui você pode criar uma documentação para o projeto.</p>
+					<p>A wiki é editara em linguagem Markdown.</p>
+					<p>A wiki, em si, é um outro repositório. Dessa forma, você pode clonar a wiki e editar os arquivos localmente</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section data-background="images/demo1.jpg">
+			</section>
+
+			<section>
+				<h2>Resumo</h2>
+				<ul>
+					<li>Iniciar repositório: git init</li>
+					<li>Adicionar arquivos: git add</li>
+					<li>Comitar arquivos: git commit</li>
+					<li>Verificar status: git status</li>
+					<li>Verificar histórico: git log</li>
+					<li>Verificar diferenças: git diff</li>
+					<li>Remover arquivos: git rm</li>
+					<li>Mover arquivos: git mov</li>
+					<li>Clonar repositório: git clone</li>
+					<li>Pegar atualizações: git pull</li>
+					<li>Enviar atualizações: git push</li>
+					<li>Adicionar servidor remoto: git remote add</li>
+				</ul>
+			</section>
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 5</h1>
+				<h2 class="subtitle">Release the Gitkraken</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h3>Trabalhar na linha de comando?</h3>
+				<img src="images/sith.jpg" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Clients para Git</h2>
+				<ul>
+					<li><a href="https://www.gitkraken.com/">GitKraken</a></li>
+					<li><a href="https://wiki.gnome.org/Apps/Gitg/">gitg</a></li>
+					<li><a href="https://git-cola.github.io/">git-cola</a></li>
+					<li><a href="https://www.cycligent.com/git-tool">Cycligent Git Tool</a></li>
+					<li><a href="http://www.giteyeapp.com/">GitEye</a></li>
+					<li><a href="https://www.gitahead.com/">GitAhead</a></li>
+					<li><a href="https://wiki.gnome.org/Apps/giggle/">giggle</a></li>
+					<li><a href="https://tortoisegit.org/">TortoiseGit</a></li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Demo: operações básicas no TortoiseGit</h2>
+				<img src="images/TortoiseGit_logo.svg.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Demo: operações básicas no GitKraken</h2>
+				<img src="images/gitkraken.png" class="plain" />
+			</section>
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 6</h1>
+				<h2 class="subtitle">Operações avançadas com o Git</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Integridade ninja</h2>
+				<h2>Tudo tem checksum</h2>
+				<h2>SHA-1</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Snapshots x diferenças</h2>
+				<img src="images/diferencas.png" class="plain" />
+
+				<aside class="notes">
+					http://willi.am/blog/2014/10/14/for-the-last-time-git-stores-snapshots-not-diffs/
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Snapshots x diferenças</h2>
+				<img src="images/snapshot.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Ignorando arquivos</h2>
+				<p>
+					Configurar um arquivo .gitignore antes de começar a trabalhar é uma boa ideia.
+				</p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Ignorando arquivos - Regras</h2>
+				<ul>
+					<li>Linhas em branco ou iniciando com # são ignoradas.</li>
+					<li>Padrões glob comuns funcionam. *</li>
+				</ul>
+
+				<blockquote cite="https://pt.wikipedia.org/wiki/Glob_(programa%C3%A7%C3%A3o)">
+					<a href="https://pt.wikipedia.org/wiki/Glob_(programa%C3%A7%C3%A3o)" target="_blank">
+						* Definição emocionante de glob patterns na wikipedia
+					</a>
+				</blockquote>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Ignorando arquivos - Regras</h2>
+				<ul>
+					<li>Padrões terminados com uma barra (/) especificam diretórios.</li>
+					<li>Ponto de exclamação (!) no início para negar o padrão.</li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Ignorando arquivos</h2>
+				<pre><code data-trim data-noescape>
+					.idea/
+					*.iml
+					*.iws
+					*.eml
+					out/
+					.DS_Store
+					.svn
+					log/*.log
+					tmp/**
+					node_modules/
+					.sass-cache
+					css/reveal.min.css
+					js/reveal.min.js
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificcando as mudanças</h2>
+				<pre><code data-trim data-noescape>
+					$ git diff
+					diff --git a/index.html b/index.html
+					index 2c78d33..544c542 100644
+					--- a/index.html
+					+++ b/index.html
+					@@ -16,11 +16,11 @@
+					&lt;/head&gt;
+					&lt;body&gt;
+
+					-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+					+        &lt;h1&gt;Olha o titulo adicionado!</h1>
+					+        &lt;h2&gt;Outro s&oacute; pra variar&lt;/h2&gt;
+					+
+						 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+					-        &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+						 &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+					-
+					-         &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
+					+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
+					&lt;/body&gt;
+					&lt;/html&gt;
+					warning: LF will be replaced by CRLF in index.html.
+					The file will have its original line endings in your working directory.
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando mudanças com o Winmerge</h2>
+
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Git remote</h2>
+
+			</section>
+
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Clonando um repositório existente no USB</h2>
+				<pre><code data-trim data-noescape>
+						$ git init --bare
+
+						$ git clone /media/repositories/foo/
+
+						$ git remote add usb file:///media/repositories/foo
+
+						$ git branch --set-upstream master usb/master
+					</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Usando o git com pasta compartilhada do windows</h2>
+				<pre><code data-trim data-noescape>
+					$ git clone \\odin\projetos\teste
+				</code></pre>
+
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Usando o git com mais de um repositório remoto</h2>
+
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Remover arquivos</h2>
+				<pre><code data-trim data-noescape>
+					$ git rm arquivo
+
+					$ git rm --cached readme.txt
+
+					$ git rm log/\*.log
+				</code></pre>
+
+				<aside class="notes">
+					<p>
+						git rm will remove entries from the staging area. This is a bit different from git reset HEAD which "unstages" files. By "unstage" I mean it reverts the staging area to what was there before we started modifying things. git rm on the other hand just kicks
+						the file off the stage entirely, so that it's not included in the next commit snapshot, thereby effectively deleting it.
+					</p>
+
+					<p>
+						By default, a git rm file will remove the file from the staging area entirely and also off your disk > (the working directory). To leave the file in the working directory, you can use git rm --cached.
+					</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Movendo arquivos</h2>
+				<pre><code data-trim data-noescape>
+					$ git mv arquivo_origem arquivo_destino
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Visualizando o histórico de commits</h2>
+				<pre><code data-trim data-noescape>
+					$ git log
+					commit ca82a6dff817ec66f44342007202690a93763949
+					Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+					Date:   Mon Mar 17 21:52:11 2008 -0700
+
+					    changed the verison number
+
+					commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+					Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+					Date:   Sat Mar 15 16:40:33 2008 -0700
+
+					    removed unnecessary test code
+					...
+        </code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Parâmetros do <code>git log</code></h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Opção</th>
+							<th>Descrição</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>-p</code>
+							</td>
+							<td>Mostra o patch introduzido com cada commit.</td>
+						</tr>
+						<tr>
+							<td>
+								<code>--stat</code>
+							</td>
+							<td>Mostra estatísticas de arquivos modificados em cada commit.</td>
+						</tr>
+						<tr>
+							<td>
+								<code>--shortstat</code>
+							</td>
+							<td>Mostra somente as linhas modificadas/inseridas/excluídas do comando --stat.</td>
+						</tr>
+						<tr>
+							<td>
+								<code>--name-only</code>
+							</td>
+							<td>Mostra a lista de arquivos modificados depois das informações do commit.</td>
+						</tr>
+						<tr>
+							<td>
+								<code>--name-status</code>
+							</td>
+							<td>Mostra a lista de arquivos afetados com informações sobre adição/modificação/exclusão dos mesmos.</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h1>Desfazendo coisas no git</h1>
+				<h2>Cuidado! Essa é uma das poucas áreas no Git onde você pode perder algum trabalho se fizer errado.</h2>
+			</section>
+
+			<section>
+				<h2>Modificando o último commit</h2>
+				<pre><code data-trim data-noescape>
+					$ git commit --amend
+				</code></pre>
+
+				<pre><code data-trim data-noescape>
+					$ git commit -m 'initial commit'
+					$ git add forgotten_file
+					$ git commit --amend
+        </code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Tirando arquivos da área de seleção</h2>
+
+				<p>
+					Você adicionou arquivos (<code>git add</code>) e quer remover algum deles?
+				</p>
+
+				<pre><code data-trim data-noescape>
+										$ git add .
+										$ git status
+										# On branch master
+										# Changes to be committed:
+										#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+										#
+										#       modified:   README.txt
+										#       modified:   benchmarks.rb
+					        </code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Git reset neles!</h2>
+				<pre><code data-trim data-noescape>
+										$ git reset HEAD benchmarks.rb
+										benchmarks.rb: locally modified
+										$ git status
+										# On branch master
+										# Changes to be committed:
+										#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+										#
+										#       modified:   README.txt
+										#
+										# Changes not staged for commit:
+										#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+										#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+										#
+										#       modified:   benchmarks.rb
+										#
+					      	</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Desfazendo um Arquivo Modificado</h2>
+				<p>
+					Alterou um arquivo e quer desfazer a alteração?
+				</p>
+				<pre><code data-trim data-noescape>
+					# Changes not staged for commit:
+					#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+					#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+					#
+					#       modified:   benchmarks.rb
+					#
+        </code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Use checkout!</h2>
+
+				<pre><code data-trim data-noescape>
+					$ git checkout -- benchmarks.rb
+					$ git status
+					# On branch master
+					# Changes to be committed:
+					#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+					#
+					#       modified:   README.txt
+					#
+        </code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h1>Ferramenta de diff</h1>
+				<pre><code data-trim data-noescape>
+			$ git config --global merge.tool vimdiff
+										</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Ferramenta de diff - Windows</h2>
+				<img src="images/TortoiseGitDiffViewer.png" class="plain" />
+
+				<aside class="notes">
+					<p>Under Configure the program used for comparing different revisions of files, select External and type the following into the box.</p>
+
+					<pre><code data-trim data-noescape>
+												WinMergeU /r /e /x /u /wl %base %mine
+												</code></pre>
+
+					<p>Next, select Merge Tool (on the left). Again, select External and type the following.</p>
+
+					<pre><code data-trim data-noescape>
+												WinMergeU /e /u %merged
+												</code></pre>
+
+					<p>Now, wherever TortoiseMerge use to show up, you should see WinMerge instead</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando as configurações</h2>
+				<pre><code data-trim data-noescape>
+			$ git config --list
+			user.name=Scott Chacon
+			user.email=schacon@gmail.com
+			color.status=auto
+			color.branch=auto
+			color.interactive=auto
+			color.diff=auto
+			...
+										</code></pre>
+
+				<h2>Verificando uma configuração específica</h2>
+
+				<pre><code data-trim data-noescape>
+			$ git config user.name
+			Scott Chacon
+										</code></pre>
+			</section>
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 7</h1>
+				<h2 class="subtitle">Trabalhando em equipe com o Git</h2>
+				<img src="images/coming.png" class="plain" />
+			</section>
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 8</h1>
+				<h2 class="subtitle">Publicação de sites com Github</h2>
+				<img src="images/coming.png" class="plain" />
+			</section>
+
+
+			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			<section data-background="#9B0000">
+				<h1 class="subtitle">Tomo 9</h1>
+				<h2 class="subtitle">Encontrando Ajuda</h2>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<pre><code data-trim data-noescape>
+					$ git help &lt;verb&gt;
+					$ git &lt;verb&gt; --help
+					$ man git-&lt;verb&gt;
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Obtendo ajuda</h2>
+				<p>O guia descomplicado: <a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html">http://rogerdudler.github.io/git-guide/index.pt_BR.html</a></p>
+				<p>O livro de referência: <a href="https://git-scm.com/book/pt-br/v1/">https://git-scm.com/book/pt-br/v1/</a></p>
+				<p>O simulador pra aprender branching: <a href="http://learngitbranching.js.org/">http://learngitbranching.js.org/</a></p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h1>Perguntas?</h1>
+				<h3>Email: josenaldo@gmail.com</h3>
+				<h3>Twitter: @josenaldomatos</h3>
+				<h3>Github: https://github.com/josenaldo</h3>
+				<h3>Steam: josenaldo</h3>
+				<h3>PSN: vudu_reverso</h3>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/ga.js"></script>
+</body>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
 </html>
