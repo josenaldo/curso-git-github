@@ -675,6 +675,14 @@
 				<h2>Integridade ninja</h2>
 				<h2>Tudo tem checksum</h2>
 				<h2>SHA-1</h2>
+
+				<aside class="notes">
+					<p>Tudo no Git tem seu checksum (valor para verificação de integridade) calculado antes que seja armazenado e então passa a ser referenciado pelo checksum. </p>
+
+					<p>O mecanismo que o Git usa para fazer o checksum é chamado de hash SHA-1, uma string de 40 caracteres composta de caracteres hexadecimais (0-9 e a-f) que é calculado a partir do conteúdo de um arquivo ou estrutura de um diretório no Git. </p>
+
+					<p>Um hash SHA-1 parece com algo mais ou menos assim: 24b9da6552252987aa493b52f8696cd6d3b00373</p>
+				</aside>
 			</section>
 
 			<!-- ***************************************************************** -->
@@ -1041,23 +1049,26 @@
 			<section>
 				<h2>Verificando as configurações</h2>
 				<pre><code data-trim data-noescape>
-			$ git config --list
-			user.name=Scott Chacon
-			user.email=schacon@gmail.com
-			color.status=auto
-			color.branch=auto
-			color.interactive=auto
-			color.diff=auto
-			...
-										</code></pre>
-
-				<h2>Verificando uma configuração específica</h2>
-
-				<pre><code data-trim data-noescape>
-			$ git config user.name
-			Scott Chacon
-										</code></pre>
+					$ git config --list
+					user.name=Scott Chacon
+					user.email=schacon@gmail.com
+					color.status=auto
+					color.branch=auto
+					color.interactive=auto
+					color.diff=auto
+					...
+				</code></pre>
 			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando uma configuração específica</h2>
+				<pre><code data-trim data-noescape>
+					$ git config user.name
+					Scott Chacon
+				</code></pre>
+			</section>
+
 			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 			<section data-background="#9B0000">
 				<h1 class="subtitle">Tomo 7</h1>
@@ -1081,6 +1092,7 @@
 
 			<!-- ***************************************************************** -->
 			<section>
+				<h2>Usando a ajuda do git</h2>
 				<pre><code data-trim data-noescape>
 					$ git help &lt;verb&gt;
 					$ git &lt;verb&gt; --help
@@ -1090,7 +1102,7 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Obtendo ajuda</h2>
+				<h2>Livros e referências</h2>
 				<p>O guia descomplicado: <a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html">http://rogerdudler.github.io/git-guide/index.pt_BR.html</a></p>
 				<p>O livro de referência: <a href="https://git-scm.com/book/pt-br/v1/">https://git-scm.com/book/pt-br/v1/</a></p>
 				<p>O simulador pra aprender branching: <a href="http://learngitbranching.js.org/">http://learngitbranching.js.org/</a></p>
@@ -1098,12 +1110,16 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h1>Perguntas?</h1>
-				<h3>Email: josenaldo@gmail.com</h3>
-				<h3>Twitter: @josenaldomatos</h3>
-				<h3>Github: https://github.com/josenaldo</h3>
-				<h3>Steam: josenaldo</h3>
-				<h3>PSN: vudu_reverso</h3>
+				<h2>Perguntas?</h2>
+				<ul>
+					<li>Email:
+						<a href="mailto:josenaldo@gmail.com">josenaldo@gmail.com</a>
+					</li>
+					<li>Twitter: <a href="https://twitter.com/josenaldomatos">@josenaldomatos</a></li>
+					<li>Github: <a href="https://github.com/josenaldo">josenaldo</a></li>
+					<li>Steam: <a href="http://steamcommunity.com/id/josenaldo">josenaldo</a></li>
+					<li>PSN: <a href="https://my.playstation.com/vudu_reverso">vudu_reverso</a></li>
+				</ul>
 			</section>
 		</div>
 	</div>
