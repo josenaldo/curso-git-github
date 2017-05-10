@@ -399,7 +399,11 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Atenção!!!</h2>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
 				<h4>
             Quando o <code>git add</code> é executado, o git seleciona o arquivo do jeito que ele está.
         </h4>
@@ -475,7 +479,12 @@
 			<!-- ***************************************************************** -->
 			<!-- TODO: colocar imagem de atenção -->
 			<section>
-				<h2>Atenção: Recado pra quem conhece SVN!</h2>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
+				<h2>Recado pra quem conhece SVN!</h2>
 				<h1>Clone != Checkout</h1>
 			</section>
 
@@ -1105,20 +1114,16 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Movendo arquivos</h2>
-				<pre><code data-trim data-noescape>
-					$ git mv arquivo_origem arquivo_destino
-				</code></pre>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
+				<h4>Desfazendo coisas no git</h4>
+				<p>Cuidado! Essa é uma das poucas áreas no Git onde você pode perder algum trabalho se fizer errado.</p>
 			</section>
-
-
 
 			<!-- ***************************************************************** -->
-			<section>
-				<h1>Desfazendo coisas no git</h1>
-				<h2>Cuidado! Essa é uma das poucas áreas no Git onde você pode perder algum trabalho se fizer errado.</h2>
-			</section>
-
 			<section>
 				<h2>Modificando o último commit</h2>
 				<pre><code data-trim data-noescape>
@@ -1134,6 +1139,12 @@
 
 			<!-- ***************************************************************** -->
 			<section>
+				<h2>Modificando o último commit</h2>
+				<img src="images/gitkraken-alterando-commit1.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
 				<h2>Tirando arquivos da área de seleção</h2>
 
 				<p>
@@ -1141,15 +1152,15 @@
 				</p>
 
 				<pre><code data-trim data-noescape>
-										$ git add .
-										$ git status
-										# On branch master
-										# Changes to be committed:
-										#   (use "git reset HEAD &lt;file&gt;..." to unstage)
-										#
-										#       modified:   README.txt
-										#       modified:   benchmarks.rb
-					        </code></pre>
+					$ git add .
+					$ git status
+					# On branch master
+					# Changes to be committed:
+					#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+					#
+					#       modified:   README.txt
+					#       modified:   benchmarks.rb
+        </code></pre>
 			</section>
 
 			<!-- ***************************************************************** -->
@@ -1171,7 +1182,13 @@
 						#
 						#       modified:   benchmarks.rb
 						#
-	      	</code></pre>
+					</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Tirando arquivos da área de seleção</h2>
+				<img src="images/gitkraken-retirando-arquivos-da-stagging.png" class="plain" />
 			</section>
 
 			<!-- ***************************************************************** -->
