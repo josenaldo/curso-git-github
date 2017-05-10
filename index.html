@@ -721,7 +721,7 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Trabalhando com o GitKraken</h2>
+				<h2>Comitando arquivos</h2>
 				<img src="images/gitkraken-trabalhando-com-arquivos1.png" class="plain" />
 			</section>
 
@@ -731,27 +731,17 @@
 				<img src="images/gitkraken.png" class="plain" />
 			</section>
 
-
-			<!-- ***************************************************************** -->
-			<section>
-				<h2>Artigos sobre o GitKraken</h2>
-				<ul>
-					<li><a href="https://support.gitkraken.com/getting-started">Gitkraken Getting Started</a></li>
-					<li><a href="https://reganmusic.wordpress.com/2016/07/19/branching-in-gitkraken/">Branching in GitKraken</a></li>
-				</ul>
-
-			</section>
 			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 			<section data-background="#9B0000">
 				<h1 class="subtitle">Tomo 6</h1>
-				<h2 class="subtitle">Operações avançadas com o Git</h2>
+				<h2 class="subtitle">Subindo de nível</h2>
 			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Integridade ninja</h2>
-				<h2>Tudo tem checksum</h2>
-				<h2>SHA-1</h2>
+				<h2>Git tem <Integridade></Integridade></h2>
+				<h4>Tudo tem checksum SHA-1</h4>
+				<p class="small">24b9da6552252987aa493b52f8696cd6d3b00373 </p>
 
 				<aside class="notes">
 					<p>Tudo no Git tem seu checksum (valor para verificação de integridade) calculado antes que seja armazenado e então passa a ser referenciado pelo checksum. </p>
@@ -759,7 +749,23 @@
 					<p>O mecanismo que o Git usa para fazer o checksum é chamado de hash SHA-1, uma string de 40 caracteres composta de caracteres hexadecimais (0-9 e a-f) que é calculado a partir do conteúdo de um arquivo ou estrutura de um diretório no Git. </p>
 
 					<p>Um hash SHA-1 parece com algo mais ou menos assim: 24b9da6552252987aa493b52f8696cd6d3b00373</p>
+
+					<p>tudo que o Git armazena é identificado não por nome do arquivo mas pelo valor do hash do seu conteúdo.</p>
 				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Git só adiciona dados</h2>
+				<h4>Quase todas as ações do Git adicionam dados no repositório</h4>
+				<h4>Antes do commit, você pode bagunçar mudanças</h4>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Git só adiciona dados</h2>
+				<h4>Após o commit, tudo é registrado e é muito difícil perder algo</h4>
+				<h4>Isso permite que possamos fazer experiências sem medo</h4>
 			</section>
 
 			<!-- ***************************************************************** -->
@@ -776,7 +782,66 @@
 			<section>
 				<h2>Snapshots x diferenças</h2>
 				<img src="images/snapshot.png" class="plain" />
+				<aside class="notes">
+					http://willi.am/blog/2014/10/14/for-the-last-time-git-stores-snapshots-not-diffs/
+				</aside>
 			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando as mudanças</h2>
+				<pre><code data-trim data-noescape>
+					$ git diff
+					diff --git a/index.html b/index.html
+					index 2c78d33..544c542 100644
+					--- a/index.html
+					+++ b/index.html
+					@@ -16,11 +16,11 @@
+					&lt;/head&gt;
+					&lt;body&gt;
+
+					-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+					+        &lt;h1&gt;Olha o titulo adicionado!</h1>
+					+        &lt;h2&gt;Outro s&oacute; pra variar&lt;/h2&gt;
+					+
+						 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+					-        &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+						 &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+					-
+					-         &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
+					+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
+					&lt;/body&gt;
+					&lt;/html&gt;
+					warning: LF will be replaced by CRLF in index.html.
+					The file will have its original line endings in your working directory.
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando as mudanças</h2> Verificando mudanças do arquivo index.html, da versão atual para última
+				<pre><code data-trim data-noescape>
+					$ git diff index.html
+				</code></pre>
+
+				<a href="https://git-scm.com/docs/git-diff">Documentação do comando diff</a>
+
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando mudanças com o GitKraken</h2>
+				<img src="images/gitkraken-visualizando-diferencas1.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando mudanças com o GitKraken</h2>
+				<img src="images/gitkraken-visualizando-diferencas2.png" class="plain" />
+			</section>
+
+
+
 
 			<!-- ***************************************************************** -->
 			<section>
@@ -830,41 +895,7 @@
 				</code></pre>
 			</section>
 
-			<!-- ***************************************************************** -->
-			<section>
-				<h2>Verificcando as mudanças</h2>
-				<pre><code data-trim data-noescape>
-					$ git diff
-					diff --git a/index.html b/index.html
-					index 2c78d33..544c542 100644
-					--- a/index.html
-					+++ b/index.html
-					@@ -16,11 +16,11 @@
-					&lt;/head&gt;
-					&lt;body&gt;
 
-					-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-					+        &lt;h1&gt;Olha o titulo adicionado!</h1>
-					+        &lt;h2&gt;Outro s&oacute; pra variar&lt;/h2&gt;
-					+
-						 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-					-        &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
-						 &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-					-
-					-         &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
-					+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
-					&lt;/body&gt;
-					&lt;/html&gt;
-					warning: LF will be replaced by CRLF in index.html.
-					The file will have its original line endings in your working directory.
-				</code></pre>
-			</section>
-
-			<!-- ***************************************************************** -->
-			<section>
-				<h2>Verificando mudanças com o Winmerge</h2>
-
-			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
@@ -1156,17 +1187,19 @@
 			<section>
 				<h2>Resumo</h2>
 				<ul>
-					<li>Iniciar repositório: git init</li>
-					<li>Adicionar arquivos: git add</li>
-					<li>Comitar arquivos: git commit</li>
-					<li>Verificar status: git status</li>
+					<li>* Iniciar repositório: git init</li>
+					<li>* Adicionar arquivos: git add</li>
+					<li>* Comitar arquivos: git commit</li>
+					<li>* Verificar status: git status</li>
+					<li>* Clonar repositório: git clone</li>
+					<li>* Pegar atualizações: git pull</li>
+					<li>* Enviar atualizações: git push</li>
+
+					<li>* Verificar diferenças: git diff</li>
+
 					<li>Verificar histórico: git log</li>
-					<li>Verificar diferenças: git diff</li>
 					<li>Remover arquivos: git rm</li>
 					<li>Mover arquivos: git mov</li>
-					<li>Clonar repositório: git clone</li>
-					<li>Pegar atualizações: git pull</li>
-					<li>Enviar atualizações: git push</li>
 					<li>Adicionar servidor remoto: git remote add</li>
 				</ul>
 			</section>
@@ -1201,6 +1234,16 @@
 				<p>O guia descomplicado: <a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html">http://rogerdudler.github.io/git-guide/index.pt_BR.html</a></p>
 				<p>O livro de referência: <a href="https://git-scm.com/book/pt-br/v1/">https://git-scm.com/book/pt-br/v1/</a></p>
 				<p>O simulador pra aprender branching: <a href="http://learngitbranching.js.org/">http://learngitbranching.js.org/</a></p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Artigos sobre o GitKraken</h2>
+				<ul>
+					<li><a href="https://support.gitkraken.com/getting-started">Gitkraken Getting Started</a></li>
+					<li><a href="https://reganmusic.wordpress.com/2016/07/19/branching-in-gitkraken/">Branching in GitKraken</a></li>
+				</ul>
+
 			</section>
 
 			<!-- ***************************************************************** -->

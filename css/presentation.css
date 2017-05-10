@@ -11,3 +11,7 @@
   margin: 0;
 
 }
+
+.reveal section p.small {
+  font-size: 0.8em;
+}
