@@ -1,4 +1,17 @@
 .reveal section img.plain {
   border: 0;
   box-shadow: none;
-  background: none; }
+  background: none;
+}
+.reveal section h2.warning {
+  background-color: #9B0000;
+  padding-top: 15px;
+}
+.reveal section h2.warning img {
+  margin: 0;
+
+}
+
+.reveal section p.small {
+  font-size: 0.8em;
+}

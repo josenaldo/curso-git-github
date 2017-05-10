@@ -43,6 +43,17 @@
 
 			<!-- ***************************************************************** -->
 			<section>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
+				<p>Se estiver vendo essa apresentação no endereço <a href="https://josenaldo.github.io/curso-git-github/#/">https://josenaldo.github.io/curso-git-github/#/</a>, aperte 's' para ver as notas dos slides</p>
+				<img src="images/notas.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
 				<h2>Quem sou?</h2>
 				<h4>Josenaldo de Oliveira Matos Filho</h4>
 				<h4>Jugleader no <a href="http://uaijug.com.br" target="_blank">UaiJUG</a></h4>
@@ -388,7 +399,11 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Atenção!!!</h2>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
 				<h4>
             Quando o <code>git add</code> é executado, o git seleciona o arquivo do jeito que ele está.
         </h4>
@@ -464,7 +479,12 @@
 			<!-- ***************************************************************** -->
 			<!-- TODO: colocar imagem de atenção -->
 			<section>
-				<h2>Atenção: Recado pra quem conhece SVN!</h2>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
+				<h2>Recado pra quem conhece SVN!</h2>
 				<h1>Clone != Checkout</h1>
 			</section>
 
@@ -493,14 +513,13 @@
 			</section>
 
 			<!-- ***************************************************************** -->
+			<!-- TODO Adicionar imagem do fluxo remoto -->
 			<section>
 				<h2>Atualizando o repositório remoto</h2>
 				<pre><code data-trim data-noescape>
 				  $ git push origin
 				</code></pre>
 			</section>
-
-			<!-- TODO Adicionar imagem do fluxo remoto -->
 
 			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 			<section data-background="#9B0000">
@@ -565,10 +584,9 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Criando um novo repositório</h2>
-				<img src="images/github3.png" class="plain" />
+				<h2>Clonando o novo repositório</h2>
+				<img src="images/github5-clonando.png" class="plain" />
 			</section>
-
 
 			<!-- ***************************************************************** -->
 			<section>
@@ -607,6 +625,7 @@
 			<section data-background="images/demo1.jpg">
 			</section>
 
+			<!-- ***************************************************************** -->
 			<section>
 				<h2>Resumo</h2>
 				<ul>
@@ -614,14 +633,9 @@
 					<li>Adicionar arquivos: git add</li>
 					<li>Comitar arquivos: git commit</li>
 					<li>Verificar status: git status</li>
-					<li>Verificar histórico: git log</li>
-					<li>Verificar diferenças: git diff</li>
-					<li>Remover arquivos: git rm</li>
-					<li>Mover arquivos: git mov</li>
 					<li>Clonar repositório: git clone</li>
 					<li>Pegar atualizações: git pull</li>
 					<li>Enviar atualizações: git push</li>
-					<li>Adicionar servidor remoto: git remote add</li>
 				</ul>
 			</section>
 
@@ -654,8 +668,66 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Demo: operações básicas no TortoiseGit</h2>
-				<img src="images/TortoiseGit_logo.svg.png" class="plain" />
+				<h2>Instalação</h2>
+				<ul>
+					<li><a href="https://gitkraken.com/download">Baixe</a> o GitKraken</li>
+					<li>Instale o GitKraken</li>
+					<li>Use o GitKraken</li>
+				</ul>
+				<p><a href="https://support.gitkraken.com/how-to-install">https://support.gitkraken.com/how-to-install</a></p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Configurando o Gitkraken</h2>
+				<img src="images/gitkraken-setup.png" class="plain" />
+				<aside class="notes">
+					<p>Após a instalação, é necessário criar um perfil.</p>
+					<p>Aqui, o usuário tem duas opções:</p>
+					<ul>
+						<li>Criar uma conta no GitKraken</li>
+						<li>Usar a conta do github para logar no GitKraken</li>
+					</ul>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Iniciando um repositório</h2>
+				<img src="images/gitkraken-iniciando-repositorio1.png" class="plain" />
+				<aside class="notes">
+					<p>Para inicializar um repositório, Vá no menu File > Init Repo</p>
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Iniciando um repositório local</h2>
+				<img src="images/gitkraken-iniciando-repositorio2.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Iniciando um repositório no Github</h2>
+				<img src="images/gitkraken-iniciando-repositorio3.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Clonando um repositório</h2>
+				<img src="images/gitkraken-clonando-repositorio1.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Clonando um repositório do Github</h2>
+				<img src="images/gitkraken-clonando-repositorio2.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Comitando arquivos</h2>
+				<img src="images/gitkraken-trabalhando-com-arquivos1.png" class="plain" />
 			</section>
 
 			<!-- ***************************************************************** -->
@@ -667,14 +739,14 @@
 			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 			<section data-background="#9B0000">
 				<h1 class="subtitle">Tomo 6</h1>
-				<h2 class="subtitle">Operações avançadas com o Git</h2>
+				<h2 class="subtitle">Subindo de nível</h2>
 			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Integridade ninja</h2>
-				<h2>Tudo tem checksum</h2>
-				<h2>SHA-1</h2>
+				<h2>Git tem <Integridade></Integridade></h2>
+				<h4>Tudo tem checksum SHA-1</h4>
+				<p class="small">24b9da6552252987aa493b52f8696cd6d3b00373 </p>
 
 				<aside class="notes">
 					<p>Tudo no Git tem seu checksum (valor para verificação de integridade) calculado antes que seja armazenado e então passa a ser referenciado pelo checksum. </p>
@@ -682,7 +754,23 @@
 					<p>O mecanismo que o Git usa para fazer o checksum é chamado de hash SHA-1, uma string de 40 caracteres composta de caracteres hexadecimais (0-9 e a-f) que é calculado a partir do conteúdo de um arquivo ou estrutura de um diretório no Git. </p>
 
 					<p>Um hash SHA-1 parece com algo mais ou menos assim: 24b9da6552252987aa493b52f8696cd6d3b00373</p>
+
+					<p>tudo que o Git armazena é identificado não por nome do arquivo mas pelo valor do hash do seu conteúdo.</p>
 				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Git só adiciona dados</h2>
+				<h4>Quase todas as ações do Git adicionam dados no repositório</h4>
+				<h4>Antes do commit, você pode bagunçar mudanças</h4>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Git só adiciona dados</h2>
+				<h4>Após o commit, tudo é registrado e é muito difícil perder algo</h4>
+				<h4>Isso permite que possamos fazer experiências sem medo</h4>
 			</section>
 
 			<!-- ***************************************************************** -->
@@ -699,11 +787,191 @@
 			<section>
 				<h2>Snapshots x diferenças</h2>
 				<img src="images/snapshot.png" class="plain" />
+				<aside class="notes">
+					http://willi.am/blog/2014/10/14/for-the-last-time-git-stores-snapshots-not-diffs/
+				</aside>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Visualizando o histórico de commits</h2>
+				<pre><code data-trim data-noescape>
+					$ git log
+					commit ca82a6dff817ec66f44342007202690a93763949
+					Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+					Date:   Mon Mar 17 21:52:11 2008 -0700
+
+					    changed the verison number
+
+					commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+					Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+					Date:   Sat Mar 15 16:40:33 2008 -0700
+
+					    removed unnecessary test code
+					...
+        </code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Parâmetros do <code>git log</code></h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Opção</th>
+							<th>Descrição</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>-p</code>
+							</td>
+							<td>Mostra o patch introduzido com cada commit.</td>
+						</tr>
+						<tr>
+							<td>
+								<code>--stat</code>
+							</td>
+							<td>Mostra estatísticas de arquivos modificados em cada commit.</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Parâmetros do <code>git log</code></h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Opção</th>
+							<th>Descrição</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>--shortstat</code>
+							</td>
+							<td>Mostra somente as linhas modificadas/inseridas/excluídas do comando --stat.</td>
+						</tr>
+						<tr>
+							<td>
+								<code>--name-only</code>
+							</td>
+							<td>Mostra a lista de arquivos modificados depois das informações do commit.</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Parâmetros do <code>git log</code></h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Opção</th>
+							<th>Descrição</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>--name-status</code>
+							</td>
+							<td>Mostra a lista de arquivos afetados com informações sobre adição/modificação/exclusão dos mesmos.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando o Log no GitKraken</h2>
+				<img src="images/gitkraken-verificando-log1.png" class="plain" />
+
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando as mudanças</h2>
+				<pre><code data-trim data-noescape>
+					$ git diff
+					diff --git a/index.html b/index.html
+					index 2c78d33..544c542 100644
+					--- a/index.html
+					+++ b/index.html
+					@@ -16,11 +16,11 @@
+					&lt;/head&gt;
+					&lt;body&gt;
+
+					-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+					+        &lt;h1&gt;Olha o titulo adicionado!</h1>
+					+        &lt;h2&gt;Outro s&oacute; pra variar&lt;/h2&gt;
+					+
+						 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+					-        &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+						 &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+					-
+					-         &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
+					+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
+					&lt;/body&gt;
+					&lt;/html&gt;
+					warning: LF will be replaced by CRLF in index.html.
+					The file will have its original line endings in your working directory.
+				</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando as mudanças</h2>
+
+				<h4>Verificando mudanças do arquivo index.html, da versão atual para última</h4>
+				<pre><code data-trim data-noescape>
+					$ git diff index.html
+				</code></pre>
+
+				<a href="https://git-scm.com/docs/git-diff">Documentação do comando diff</a>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando mudanças com o GitKraken</h2>
+				<img src="images/gitkraken-visualizando-diferencas1.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Verificando mudanças com o GitKraken</h2>
+				<img src="images/gitkraken-visualizando-diferencas2.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Resolvendo conflitos o GitKraken</h2>
+				<img src="images/gitkraken-resolvendo-conflitos1.gif" class="plain" />
 			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
 				<h2>Ignorando arquivos</h2>
+				<h4>O Git permite definir quais arquivos ele deve ignorar</h4>
+				<p>Em geral, arquivos gerados automaticamente ou que fazem sentido apenas na máquina atual devem ser mantidos fora do repositório</p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Ignorando arquivos</h2>
+				<p>Exemplo:</p>
+				<ul>
+					<li>Arquivos de log</li>
+					<li>Configurações da IDE</li>
+					<li>Arquivos gerados pelo software em execução</li>
+				</ul>
 				<p>
 					Configurar um arquivo .gitignore antes de começar a trabalhar é uma boa ideia.
 				</p>
@@ -755,50 +1023,29 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Verificcando as mudanças</h2>
-				<pre><code data-trim data-noescape>
-					$ git diff
-					diff --git a/index.html b/index.html
-					index 2c78d33..544c542 100644
-					--- a/index.html
-					+++ b/index.html
-					@@ -16,11 +16,11 @@
-					&lt;/head&gt;
-					&lt;body&gt;
-
-					-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-					+        &lt;h1&gt;Olha o titulo adicionado!</h1>
-					+        &lt;h2&gt;Outro s&oacute; pra variar&lt;/h2&gt;
-					+
-						 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-					-        &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
-						 &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-					-
-					-         &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
-					+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs//angular.js&quot;&gt;&lt;/script&gt;
-					&lt;/body&gt;
-					&lt;/html&gt;
-					warning: LF will be replaced by CRLF in index.html.
-					The file will have its original line endings in your working directory.
-				</code></pre>
-			</section>
-
-			<!-- ***************************************************************** -->
-			<section>
-				<h2>Verificando mudanças com o Winmerge</h2>
-
+				<h2>Ignorando arquivos no GitKraken</h2>
+				<img src="images/gitkraken-ignorando-arquivos1.png" class="plain" />
 			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
 				<h2>Git remote</h2>
-
+				<pre><code data-trim data-noescape>
+					$ git remote add [NOME] [URL]
+				</code></pre>
+				<h4>Adiciona, no repositório atual, </h4>
 			</section>
 
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Clonando um repositório existente no USB</h2>
+				<h2>Git remote no GitKraken</h2>
+				<img src="images/gitkraken-adicionando-outro-remote1.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Usando um pendrive como servidor Git</h2>
 				<pre><code data-trim data-noescape>
 						$ git init --bare
 
@@ -808,21 +1055,28 @@
 
 						$ git branch --set-upstream master usb/master
 					</code></pre>
+
+				<aside class="notes">
+					<ul>
+						<li><a href="http://www.geppyparziale.com/post/13494900906/create-a-git-repository-on-a-usb-drive">Create A Git Repository On A USB Drive</a></li>
+						<li><a href="http://stackoverflow.com/questions/38153478/copying-a-git-repository-to-usb-drive">Copying a git repository to USB drive</a></li>
+					</ul>
+				</aside>
 			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Usando o git com pasta compartilhada do windows</h2>
+				<h2>Usando um pendrive como servidor Git</h2>
+
+				<h4>Pegando atualizações do pendrive</h4>
 				<pre><code data-trim data-noescape>
-					$ git clone \\odin\projetos\teste
+					$ git pull usb master
 				</code></pre>
 
-			</section>
-
-			<!-- ***************************************************************** -->
-			<section>
-				<h2>Usando o git com mais de um repositório remoto</h2>
-
+				<h4>Enviando atualizações para o pendrive </h4>
+				<pre><code data-trim data-noescape>
+					$ git push usb master
+				</code></pre>
 			</section>
 
 			<!-- ***************************************************************** -->
@@ -850,84 +1104,26 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Movendo arquivos</h2>
-				<pre><code data-trim data-noescape>
-					$ git mv arquivo_origem arquivo_destino
-				</code></pre>
+				<h2>Removendo arquivos com o gitKraken</h2>
+				<img src="images/gitkraken-removendo-arquivos1.png" class="plain" />
+
+				<aside class="notes">
+					<p>Basta remover no sistema operacional que o GitKraken identifica e permite que a remoção seja colocada em stagging e comitada.</p>
+				</aside>
 			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h2>Visualizando o histórico de commits</h2>
-				<pre><code data-trim data-noescape>
-					$ git log
-					commit ca82a6dff817ec66f44342007202690a93763949
-					Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
-					Date:   Mon Mar 17 21:52:11 2008 -0700
-
-					    changed the verison number
-
-					commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
-					Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
-					Date:   Sat Mar 15 16:40:33 2008 -0700
-
-					    removed unnecessary test code
-					...
-        </code></pre>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
+				<h4>Desfazendo coisas no git</h4>
+				<p>Cuidado! Essa é uma das poucas áreas no Git onde você pode perder algum trabalho se fizer errado.</p>
 			</section>
 
 			<!-- ***************************************************************** -->
-			<section>
-				<h2>Parâmetros do <code>git log</code></h2>
-				<table>
-					<thead>
-						<tr>
-							<th>Opção</th>
-							<th>Descrição</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<code>-p</code>
-							</td>
-							<td>Mostra o patch introduzido com cada commit.</td>
-						</tr>
-						<tr>
-							<td>
-								<code>--stat</code>
-							</td>
-							<td>Mostra estatísticas de arquivos modificados em cada commit.</td>
-						</tr>
-						<tr>
-							<td>
-								<code>--shortstat</code>
-							</td>
-							<td>Mostra somente as linhas modificadas/inseridas/excluídas do comando --stat.</td>
-						</tr>
-						<tr>
-							<td>
-								<code>--name-only</code>
-							</td>
-							<td>Mostra a lista de arquivos modificados depois das informações do commit.</td>
-						</tr>
-						<tr>
-							<td>
-								<code>--name-status</code>
-							</td>
-							<td>Mostra a lista de arquivos afetados com informações sobre adição/modificação/exclusão dos mesmos.</td>
-						</tr>
-
-					</tbody>
-				</table>
-			</section>
-
-			<!-- ***************************************************************** -->
-			<section>
-				<h1>Desfazendo coisas no git</h1>
-				<h2>Cuidado! Essa é uma das poucas áreas no Git onde você pode perder algum trabalho se fizer errado.</h2>
-			</section>
-
 			<section>
 				<h2>Modificando o último commit</h2>
 				<pre><code data-trim data-noescape>
@@ -943,6 +1139,12 @@
 
 			<!-- ***************************************************************** -->
 			<section>
+				<h2>Modificando o último commit</h2>
+				<img src="images/gitkraken-alterando-commit1.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
 				<h2>Tirando arquivos da área de seleção</h2>
 
 				<p>
@@ -950,37 +1152,43 @@
 				</p>
 
 				<pre><code data-trim data-noescape>
-										$ git add .
-										$ git status
-										# On branch master
-										# Changes to be committed:
-										#   (use "git reset HEAD &lt;file&gt;..." to unstage)
-										#
-										#       modified:   README.txt
-										#       modified:   benchmarks.rb
-					        </code></pre>
+					$ git add .
+					$ git status
+					# On branch master
+					# Changes to be committed:
+					#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+					#
+					#       modified:   README.txt
+					#       modified:   benchmarks.rb
+        </code></pre>
 			</section>
 
 			<!-- ***************************************************************** -->
 			<section>
 				<h2>Git reset neles!</h2>
 				<pre><code data-trim data-noescape>
-										$ git reset HEAD benchmarks.rb
-										benchmarks.rb: locally modified
-										$ git status
-										# On branch master
-										# Changes to be committed:
-										#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
-										#
-										#       modified:   README.txt
-										#
-										# Changes not staged for commit:
-										#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
-										#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-										#
-										#       modified:   benchmarks.rb
-										#
-					      	</code></pre>
+						$ git reset HEAD benchmarks.rb
+						benchmarks.rb: locally modified
+						$ git status
+						# On branch master
+						# Changes to be committed:
+						#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+						#
+						#       modified:   README.txt
+						#
+						# Changes not staged for commit:
+						#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+						#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+						#
+						#       modified:   benchmarks.rb
+						#
+					</code></pre>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Tirando arquivos da área de seleção</h2>
+				<img src="images/gitkraken-retirando-arquivos-da-stagging.png" class="plain" />
 			</section>
 
 			<!-- ***************************************************************** -->
@@ -1017,76 +1225,68 @@
 
 			<!-- ***************************************************************** -->
 			<section>
-				<h1>Ferramenta de diff</h1>
-				<pre><code data-trim data-noescape>
-			$ git config --global merge.tool vimdiff
-										</code></pre>
+				<h2>Desfazendo um Arquivo Modificado</h2>
+				<img src="images/gitkraken-desfazendo-alteracoes1.png" class="plain" />
 			</section>
 
-			<!-- ***************************************************************** -->
 			<section>
-				<h2>Ferramenta de diff - Windows</h2>
-				<img src="images/TortoiseGitDiffViewer.png" class="plain" />
-
-				<aside class="notes">
-					<p>Under Configure the program used for comparing different revisions of files, select External and type the following into the box.</p>
-
-					<pre><code data-trim data-noescape>
-												WinMergeU /r /e /x /u /wl %base %mine
-												</code></pre>
-
-					<p>Next, select Merge Tool (on the left). Again, select External and type the following.</p>
-
-					<pre><code data-trim data-noescape>
-												WinMergeU /e /u %merged
-												</code></pre>
-
-					<p>Now, wherever TortoiseMerge use to show up, you should see WinMerge instead</p>
-				</aside>
-			</section>
-
-			<!-- ***************************************************************** -->
-			<section>
-				<h2>Verificando as configurações</h2>
-				<pre><code data-trim data-noescape>
-					$ git config --list
-					user.name=Scott Chacon
-					user.email=schacon@gmail.com
-					color.status=auto
-					color.branch=auto
-					color.interactive=auto
-					color.diff=auto
-					...
-				</code></pre>
-			</section>
-
-			<!-- ***************************************************************** -->
-			<section>
-				<h2>Verificando uma configuração específica</h2>
-				<pre><code data-trim data-noescape>
-					$ git config user.name
-					Scott Chacon
-				</code></pre>
+				<h2>Resumo</h2>
+				<ul>
+					<li>* Verificar histórico: git log</li>
+					<li>* Verificar diferenças: git diff</li>
+					<li>* Ignorando arquivos: arquivo .ignore</li>
+					<li>* Adicionar servidor remoto: git remote add</li>
+					<li>* Remover arquivos: git rm</li>
+					<li>* Mover arquivos: git mov</li>
+				</ul>
 			</section>
 
 			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 			<section data-background="#9B0000">
 				<h1 class="subtitle">Tomo 7</h1>
 				<h2 class="subtitle">Trabalhando em equipe com o Git</h2>
-				<img src="images/coming.png" class="plain" />
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2 class="warning">
+					<img src="images/warning.png" class="plain" />
+					<span>Atenção Vingadores da Justiça</span>
+					<img src="images/warning.png" class="plain" />
+				</h2>
+				<h2>Desafio Amalgamerda!</h2>
+				<h4>Houve uma colisão de universos e precisamos catalogar os novos heróis.</h4>
+				<h4>Vocês jovens heróis, devem identificar quem são e de onde vieram os novos heróis .</h4>
+			</section>
+
+			<section>
+				<h2>Desafio Amálgama - Regras</h2>
+				<ul>
+					<li>Cada equipe deve ter um repositório</li>
+					<li>Máximo de 4 membros por equipe</li>
+					<li>Cada novo herói é o amalgama de outros dois existentes</li>
+					<li>Amálgamas fictícios (como os da saga Amálgama da Marvel e DC) não serão usados!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Desafio Amálgama - Regras</h2>
+				<ul>
+					<li>Cada novo herói tem uma pasta com seu dossiê</li>
+					<li>Cada dossiê deve ter duas fotos, dos heróis antigos e um texto descrevendo o novo herói, sua história e seus poderes</li>
+					<li>Cada dossiê deve ter ao menos dois editores, para garantir a precisão</li>
+				</ul>
+			</section>
+
+			<section data-background="#000000">
+				<h2>PONEYSHER!</h2>
+				<p class="small">Esse ponei justiceiro teve sua família morta por um jumento mafioso e resolveu combater o crime! </p>
+				<img src="images/poneysher.png" class="plain" />
 			</section>
 
 			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 			<section data-background="#9B0000">
 				<h1 class="subtitle">Tomo 8</h1>
-				<h2 class="subtitle">Publicação de sites com Github</h2>
-				<img src="images/coming.png" class="plain" />
-			</section>
-
-
-			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-			<section data-background="#9B0000">
-				<h1 class="subtitle">Tomo 9</h1>
 				<h2 class="subtitle">Encontrando Ajuda</h2>
 			</section>
 
@@ -1106,6 +1306,25 @@
 				<p>O guia descomplicado: <a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html">http://rogerdudler.github.io/git-guide/index.pt_BR.html</a></p>
 				<p>O livro de referência: <a href="https://git-scm.com/book/pt-br/v1/">https://git-scm.com/book/pt-br/v1/</a></p>
 				<p>O simulador pra aprender branching: <a href="http://learngitbranching.js.org/">http://learngitbranching.js.org/</a></p>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Ajuda sobre o GitKraken</h2>
+				<ul>
+					<li><a href="https://support.gitkraken.com/getting-started">Gitkraken Getting Started</a></li>
+					<li><a href="https://reganmusic.wordpress.com/2016/07/19/branching-in-gitkraken/">Branching in GitKraken</a></li>
+				</ul>
+			</section>
+
+			<!-- ***************************************************************** -->
+			<section>
+				<h2>Próximos tópicos a estudar</h2>
+				<ul>
+					<li>Tagging</li>
+					<li>Branching</li>
+					<li>Merge e Resolução e Conflitos</li>
+				</ul>
 			</section>
 
 			<!-- ***************************************************************** -->
